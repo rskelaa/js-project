@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .logo {
+    height: 64px;
+    padding-left: 16px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 16px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: blue;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .topnav a.split {
+    float: right;
+    color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 16px;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 240px;
+    background-color: #283E56;
+    color: white;
+  }
+
+  .column a {
+    color: white;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .footer {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #283E56;
+    padding: 25px 50px;
+    border-top: 1px solid white;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    column-gap: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+  }
+  
+  .flex-item { 
+    padding: 20px;
+    width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.square {
+    width: 100%;
+    height: 240px;
+    background-color: #04AA6D;
+}
+.img-container {
+    height: 300px;
+  }
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #04AA6D;
+    color: white;
+  }
