@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <img src="../img/logo.png" class="logo" alt="">
+    <a href="contact-us.html" class="split">Contact Us</a>
+    <a data-modal-target="#modal" class="split">Appointment</a>
+    <a href="gallary.html" class="split">Gallary</a>
+    <a href="service.html" class="split">Service</a>
+    <a href="about-us.html" class="split">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="bg-container">
+    <img src="../img/header-bg.png" alt="bg" style="width:100%;">
+    <div class="bg-centered">
+      <h1 class="main-heading">Gallary</h1>
+    </div>
+  </div>
+  <div class="head-container">
+    <h2 class="heading">Gallary</h2>
+    <div class="line"></div>
+  </div>
+  <div class="grid">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/pura.jpg" alt="img" draggable="false">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/ott.jpg" alt="img" draggable="false">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/yoga.jpg" alt="img" draggable="false">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/nasiyam.jpg" alt="img" draggable="false">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/steam.jpg" alt="img" draggable="false">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/varma.jpg" alt="img">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/sid.jpg" alt="img">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/Thok.jpg" alt="img">
+    <img class="img-container" src="http://drlajibaclinic.1drlajibacure.com/img/pat.jpg" alt="img">
+  </div>
+  </div>
+
+  <div class="calltoaction">
+    <h2>Ready to Visit?</h2>
+    <div>
+      <button data-modal-target="#modal" class="btn white">Make an Appointment</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Appointment</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="/thanks.html">
+
+            <input placeholder="Enter Your First Name" class="inp" type="text" id="fname" name="fname" required>
+            <input placeholder="Enter Your Last Name" class="inp" type="text" id="lname" name="lname" required>
+            <input placeholder="Enter Your Email" class="inp" type="email" id="email" name="email" required>
+
+            <div style="display: flex; gap: 10px;">
+              <input placeholder="Enter Date" class="inp" type="date" id="email" name="email" required>
+              <input placeholder="Enter Time" class="inp" type="time" id="email" name="email" required>
+            </div>
+            <textarea class="inp" name="" id="" cols="30" rows="4"></textarea>
+            <input class="btn green" type="submit" value="Submit" style="width:50%">
+
+          </form>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <h2>WEBSITES</h2>
+      <p><a href="#news">Aayush PolyClinic</a></p>
+      <p><a href="#contact">Balaji Eye Hospital</a></p>
+      <p><a href="#about">Balaji Enterprises & Exports</a></p>
+
+    </div>
+    <div class="column">
+      <h2>ADDRESS</h2>
+      <p>BalajiEye Foundation,</p>
+      <p>80/2 Cutcherry Street,</p>
+      <p>Gobichettipalayam,</p>
+      <p>Erode.</p>
+    </div>
+    <div class="column">
+      <h2>TIMING</h2>
+      <p>Mon-Sat 9.30AM - 8PM</p>
+      <p>Sun - 10AM - 1PM</p>
+      <h4 style="margin-top: 24px;">EMAIL</h4>
+      <p>1drlajibacure@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2020 Developed by <a href="https://kitkatsoftwaretechnologies.com/">Kitkat Software Technologies</a>
+    </p>
+  </div>
+
+</body>
+<script type="text/javascript" src="../script.js"></script>
+
+</html>
